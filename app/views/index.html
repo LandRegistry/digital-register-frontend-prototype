@@ -1,53 +1,36 @@
-{{<layout}}
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/head}}
+{{/head}}
 
 {{$pageTitle}}
-	GOV.UK prototyping kit
+	Digital Register View | Prototype
 {{/pageTitle}}
 
 {{$content}}
 
 <main id="content" role="main">
 
-	<h1 class="heading-xlarge">Welcome to the GOV.UK prototyping kit</h1>
-	<!-- feel free to change this page to suit your needs -->
+	<div class="text">
 
-	<p>This is the index.html page - we recommend you put links to key pages here.</p>
+		<h1 class="heading-xlarge">Digital Register View:<br>development prototype</h1>
+		<h2 class="heading-large">Pages</h2>
 
-	<h2 class="heading-large">Pages</h2>
+		<ul>
+			<li>
+				<a href="#">Digital register view</a>
+			</li>
+		</ul>
 
-	<ul>
-		<li>
-			<a href="/examples">Example pages</a>
-		</li>
-	</ul>
-
-	<h2 class="heading-large">Resources</h2>
-
-	<ul class="list-bullet">
-		<li>
-			<a href="https://github.com/alphagov/govuk_prototype_kit/docs">
-				GOV.UK kit documentation
-			</a>
-		</li>
-		<li>
-			<a href="http://govuk-elements.herokuapp.com/snippets/">
-				Guide to GOV.UK elements HTML
-			</a>
-		</li>
-		<li>
-			<a href="https://www.gov.uk/service-manual">
-				Service design manual
-			</a>
-		</li>
-		<li>
-			<a href="https://www.gov.uk/design-principles">
-				Government Digital Service Design Principles
-			</a>
-		</li>
-	</ul>
+	</div>
 
 </main>
 
 {{/content}}
 
-{{/layout}}
+{{$bodyEnd}}
+  {{>includes/scripts}}
+{{/bodyEnd}}
+
+{{/govuk_template}}
