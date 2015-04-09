@@ -11,12 +11,87 @@
 
 // If you need a phase banner, put this inside the main content area
 // See elements _layout.scss line 22.
-.alpha-banner  {
-  @include phase-banner(alpha); // Change this to (beta) for a beta banner
+.phase-banner  {
+  @include phase-banner(beta); // Change this to (beta) for a beta banner
 }
-.alpha-tag {
-  @include phase-tag(alpha); // Change this to (beta) for a beta tag
+.phase-tag {
+  @include phase-tag(beta); // Change this to (beta) for a beta tag
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
+
+@import 'land-registry-elements';
+
+// Breadcrumbs
+.global-breadcrumb {
+
+  ol {
+    padding: 0.75em 0 $gutter 0;
+    @extend %contain-floats;
+    list-style: none;
+  }
+
+  li {
+    @include core-16;
+    float: left;
+
+    &:before {
+      content: '>';
+      color: $grey-2;
+      display: inline-block;
+      margin: 0 0.5em;
+    }
+
+    &:first-child:before {
+      content: '';
+      margin: 0;
+    }
+  }
+
+  a {
+    color: $text-colour;
+  }
+
+  strong {
+    font-weight: normal;
+  }
+}
+
+
+
+// display-title specific
+
+.heading-download {
+  padding-left: $gutter*2;
+  background-image: url(/public/images/icon-download.svg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: contain;
+}
+
+.title-extent {
+  margin-bottom: $gutter;
+}
+
+.register-datestamp {
+  display: inline-block;
+  border-top: 1px solid $grey-3;
+  padding-top: 6px;
+  margin: $gutter 0 $gutter-half;
+  color: $grey-1;
+}
+
+.register-actions {
+  margin: $gutter-half 0 $gutter-half $gutter-half;
+
+  & > [class*='icon-'] {
+    margin-bottom: 8px;
+  }
+}
+
+.help-indent {
+  padding-left: 1em;
+  border-left: 3px solid $grey-3;
+}
+
