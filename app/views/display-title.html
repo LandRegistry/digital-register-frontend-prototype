@@ -104,53 +104,169 @@
 
         <h3 class="font-small collapse-top">Proprietor(s)</h3>
 
-        <!-- two proprietors, both with multiple (3) addresses -->
+        <!-- Proprietor, multiple addresses -->
         <h4 class="heading-small expand-bottom-half">Darcy Bloggs</h4>
         <div class="grid-row">
-          <div class="column-third">
+          <div class="column-half">
             3a Mandela Way,<br>
             Southampton<br>
             SO15 5RZ
           </div>
-          <div class="column-third">
-            3a Mandela Way,<br>
-            Southampton<br>
-            SO15 5RZ
-          </div>
-          <div class="column-third">
-            3a Mandela Way,<br>
+          <div class="column-half">
+            4 Mandela Way,<br>
             Southampton<br>
             SO15 5RZ
           </div>
         </div>
-        <h4 class="heading-small expand-top expand-bottom-half">Darcy Bloggs</h4>
-        <div class="grid-row">
-          <div class="column-third">
-            3a Mandela Way,<br>
+        <div class="grid-row expand-top">
+          <div class="column-half">
+            5 Mandela Way,<br>
             Southampton<br>
             SO15 5RZ
           </div>
-          <div class="column-third">
-            3a Mandela Way,<br>
-            Southampton<br>
-            SO15 5RZ
-          </div>
-          <div class="column-third">
-            3a Mandela Way,<br>
-            Southampton<br>
-            SO15 5RZ
+          <div class="column-half">
+            email.address@digital.landregistry.gov.uk
           </div>
         </div>
 
+        <!-- from samples provided -->
+
         <!-- "Trading as..." -->
-        <h4 class="heading-small collapse-bottom">Scotland Company PLC</h4>
-        <div class="expand-bottom-half">trading as Scotland Life</div>
-        <div>
-          Bluebell Cottage<br>
-          Flower Street<br>
-          Plymouth</br>
-          PL10 1EE
+        <h4 class="heading-small expand-bottom-half">
+          Scotland Company PLC<!-- non_private_individual_name -->
+          <span class="font-small">trading as Scotland Life<!-- name_information --></span>
+        </h4>
+        <div class="expand-bottom-half">Company registration number 223224<!-- company_reg_num --></div>
+        <div class="grid-row">
+          <div class="column-half">
+            Bluebell Cottage<!-- house_description --><br>
+            Flower Street<!-- street_name --><br>
+            Plymouth<!-- town --></br>
+            PL10 1EE<!-- postcode -->
+          </div>
         </div>
+
+        <!-- Overseas company -->
+        <h4 class="heading-small expand-bottom-half">
+          Around the World Ltd<!-- non_private_individual_name -->
+          <span class="font-small">incorporated in Turkey<!-- country_incorporation --></span>
+        </h4>
+        <div class="expand-bottom-half">Company registration number 11223344<!-- company_reg_num --></div>
+        <div class="grid-row">
+          <div class="column-half">
+            The Big House<!-- foreign_bfpo_address_1 --><br>
+            Black Mountain<!-- foreign_bfpo_address_2 --><br>
+            Turkey<!-- foreign_bfpo_address_3 --><br>
+            00123<!-- foreign_bfpo_address_4 -->
+          </div>
+          <div class="column-half">
+            DX<!-- address_type -->12345<!-- dx_no -->, London<!-- exchange_name -->
+          </div>
+        </div>
+
+        <!-- Multiple proprietors, all individuals, with 'trading as' -->
+        <h4 class="heading-small expand-bottom-half">
+          Billy<!-- forename --> Brown<!-- surname -->
+          <span class="font-small">trading as Brown Solicitors<!-- trading_name --></span>
+        </h4>
+        <div class="grid-row">
+          <div class="column-half">
+            Sub building<!-- sub_building_description --><br>
+            Building<!-- house_description --><br>
+            Street<!-- street_name --><br>
+            Locality<!-- local_name --><br>
+            Plymouth<!-- town --></br>
+            PL10 1TT<!-- postcode -->
+          </div>
+        </div>
+        <h4 class="heading-small expand-bottom-half">
+          Sarah<!-- forename --> Smith<!-- surname -->
+          <span class="font-small">trading as Brown Solicitors<!-- trading_name --></span>
+        </h4>
+        <div class="grid-row">
+          <div class="column-half">
+            Sub building<!-- sub_building_description --><br>
+            Building<!-- house_description --><br>
+            Street<!-- street_name --><br>
+            Locality<!-- local_name --><br>
+            Plymouth<!-- town --></br>
+            PL10 1TT<!-- postcode -->
+          </div>
+        </div>
+
+        <!-- Multiple proprietors, horrific cases -->
+        <h4 class="heading-small expand-bottom-half">
+          Browns PLC<!-- non_private_individual_name -->
+        </h4>
+        <div class="expand-bottom-half">Company registration number 12300123<!-- company_reg_num --></div>
+        <div class="grid-row">
+          <div class="column-half">
+            2<!-- house_no --> Looe Street<!-- street_name --><br>
+            Plymouth<!-- town --></br>
+            PL10 1FF<!-- postcode -->
+          </div>
+          <div class="column-half">
+            DX<!-- address_type -->123<!-- dx_no -->, Plymouth<!-- exchange_name -->
+          </div>
+        </div>
+        <div class="grid-row expand-top">
+          <div class="column-half">
+            bp@brownsplc.com
+          </div>
+        </div>
+
+        <h4 class="heading-small expand-bottom-half">
+          Sally<!-- forename --> Brown<!-- surname -->
+        </h4>
+        <div class="grid-row">
+          <div class="column-half">
+            <i>care of</i><br>
+            John Brown<!-- care_of_name --><br>
+            1<!-- house_no --> Whistle Lane<!-- street_name --><br>
+            Plymouth<!-- town --></br>
+            PL10 1EA<!-- postcode -->
+          </div>
+          <div class="column-half">
+            <i>care of</i><br>
+            BFPO<!-- care_of_name --><br>
+            <!-- using line breaks because https://www.gov.uk/british-forces-post-office-services -->
+            Bfpo Test<!-- foreign_bfpo_address1 --><br>
+            Test 1<!-- foreign_bfpo_address2 -->
+          </div>
+        </div>
+        <div class="grid-row expand-top">
+          <div class="column-half">
+            <!-- using line breaks because https://www.gov.uk/british-forces-post-office-services -->
+            Overseas Address<!-- foreign_bfpo_address1 --><br>
+            Around the World<!-- foreign_bfpo_address2 --><br>
+            Australia<!-- foreign_bfpo_address3 -->
+          </div>
+        </div>
+        <h4 class="heading-small expand-bottom-half">
+          William<!-- forename --> White<!-- surname -->
+          <span class="font-small">of the charity Dogs for Life<!-- charity_name --></span>
+        </h4>
+        <div class="grid-row">
+          <div class="column-half">
+            The White House<!-- house_description --><br>
+            Plymouth<!-- town --></br>
+            PL10 1FF<!-- postcode -->
+          </div>
+        </div>
+        <h4 class="heading-small expand-bottom-half">
+          All Dogs PLC<!-- non_private_individual_name -->
+          <span class="font-small">of the charity Dogs for Life<!-- charity_name --></span>
+        </h4>
+        <div class="expand-bottom-half">Company registration number 99999999<!-- company_reg_num --></div>
+        <div class="grid-row">
+          <div class="column-half">
+            20<!-- house_no --> Carew Road<!-- street_name --><br>
+            Plymouth<!-- postal_county --></br>
+            PL5 2FF<!-- postcode -->
+          </div>
+        </div>
+
+
 
       </section>
 
