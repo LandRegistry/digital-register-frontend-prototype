@@ -64,3 +64,13 @@
   padding-top: $gutter;
   border-top: 2px solid $grey-3;
 }
+
+.column-three-quarters {
+  @include grid-column( 3/4 );
+}
+
+.column-flip {
+  @include media(tablet) {
+    float: right;
+  }
+}
