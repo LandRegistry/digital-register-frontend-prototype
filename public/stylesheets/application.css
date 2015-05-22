@@ -1516,6 +1516,16 @@ nav ol, nav ul {
   padding-top: 30px;
   border-top: 2px solid #dee0e2; }
 
+.column-three-quarters {
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media (min-width: 641px) {
+    .column-three-quarters {
+      float: left;
+      width: 75%; } }
+
 .global-breadcrumb ol {
   padding: 0.75em 0 30px 0;
   list-style: none; }
@@ -1542,6 +1552,19 @@ nav ol, nav ul {
   color: #0b0c0c; }
 .global-breadcrumb strong {
   font-weight: normal; }
+
+.account {
+  padding: 0.75em 0 30px 0;
+  text-align: right;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    .account {
+      font-size: 14px;
+      line-height: 1.1428571429; } }
 
 .heading-download {
   padding-left: 60px;

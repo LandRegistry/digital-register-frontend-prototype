@@ -64,3 +64,8 @@
   padding-top: $gutter;
   border-top: 2px solid $grey-3;
 }
+
+
+.column-three-quarters {
+  @include grid-column( 3/4 );
+}
